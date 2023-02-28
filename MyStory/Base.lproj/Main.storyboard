@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lBZ-ia-deW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Iron Man-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tony1" translatesAutoresizingMaskIntoConstraints="NO" id="7w5-tm-vMp">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tony4" translatesAutoresizingMaskIntoConstraints="NO" id="ouJ-dI-GV9">
+                                <rect key="frame" x="122" y="137" width="170" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="snJ-Yc-ntv"/>
+                                    <constraint firstAttribute="height" constant="170" id="vFH-OF-hhh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Za-kJ-xD6">
+                                <rect key="frame" x="70" y="398" width="274" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="My only weakness"/>
+                                <connections>
+                                    <segue destination="0uo-Ny-USW" kind="show" id="apg-Jo-mi8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AnT-f3-SXW">
+                                <rect key="frame" x="70" y="459" width="274" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="How much can I fit?"/>
+                                <connections>
+                                    <segue destination="byW-fm-kpp" kind="show" id="vU1-nv-rJJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebk-1p-m8o">
+                                <rect key="frame" x="70" y="337" width="274" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="My cool backstory"/>
+                                <connections>
+                                    <segue destination="F5f-h8-2Ic" kind="show" id="zCR-Un-mnP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.623700328708924" green="0.18491334510838917" blue="0.0086388510035272249" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Ebk-1p-m8o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="6eJ-JG-5m0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ebk-1p-m8o" secondAttribute="trailing" constant="70" id="86u-C6-JIT"/>
+                            <constraint firstItem="ouJ-dI-GV9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8wy-Bc-CWc"/>
+                            <constraint firstItem="AnT-f3-SXW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="9Ev-Tm-dNN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AnT-f3-SXW" secondAttribute="trailing" constant="139" id="DfI-ra-seh"/>
+                            <constraint firstItem="AnT-f3-SXW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Ehv-F9-rJJ"/>
+                            <constraint firstItem="ouJ-dI-GV9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="Iru-aV-YtT"/>
+                            <constraint firstItem="Ebk-1p-m8o" firstAttribute="top" secondItem="ouJ-dI-GV9" secondAttribute="bottom" constant="30" id="KR4-eR-nW4"/>
+                            <constraint firstItem="8Za-kJ-xD6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Ohc-UB-bHf"/>
+                            <constraint firstItem="ouJ-dI-GV9" firstAttribute="centerX" secondItem="7w5-tm-vMp" secondAttribute="centerX" id="QDv-Su-Vrc"/>
+                            <constraint firstItem="ouJ-dI-GV9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T8l-MI-y74"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Za-kJ-xD6" secondAttribute="trailing" constant="70" id="Tg4-7X-lXb"/>
+                            <constraint firstItem="7w5-tm-vMp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bDf-Om-LN8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AnT-f3-SXW" secondAttribute="trailing" constant="70" id="hvp-ag-cK4"/>
+                            <constraint firstItem="8Za-kJ-xD6" firstAttribute="top" secondItem="Ebk-1p-m8o" secondAttribute="bottom" constant="30" id="lZ7-g0-S4f"/>
+                            <constraint firstItem="7w5-tm-vMp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nuF-bV-B2h"/>
+                            <constraint firstAttribute="bottom" secondItem="7w5-tm-vMp" secondAttribute="bottom" id="rLD-oN-JEw"/>
+                            <constraint firstItem="ouJ-dI-GV9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tfA-Eu-GDM"/>
+                            <constraint firstItem="AnT-f3-SXW" firstAttribute="top" secondItem="8Za-kJ-xD6" secondAttribute="bottom" constant="30" id="u2T-jP-SIx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Iron Man" id="nv4-c7-W8Z"/>
+                    <connections>
+                        <outlet property="logoImage" destination="ouJ-dI-GV9" id="ASN-m9-Ki7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
+        </scene>
+        <!--My cool backstory-->
+        <scene sceneID="Z2t-XD-6w7">
+            <objects>
+                <viewController id="F5f-h8-2Ic" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v0j-s5-ikt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tony5" translatesAutoresizingMaskIntoConstraints="NO" id="vRz-54-k5o">
+                                <rect key="frame" x="5" y="128" width="404" height="251"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tkk-r7-v40">
+                                <rect key="frame" x="5" y="429" width="404" height="190"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="nvM-TU-tfs"/>
+                                </constraints>
+                                <string key="text">Tony Stark is the wealthy son of industrialist and weapons manufacturer Howard Stark and his wife, Maria. Tony grew up a genius with a brilliant mind for technology and inventions and, naturally, followed in his father's footsteps, inheriting Stark Industries upon his parents' untimely death.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Ld-9d-4fd"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstItem="0Ld-9d-4fd" firstAttribute="trailing" secondItem="vRz-54-k5o" secondAttribute="trailing" constant="5" id="76H-eR-f6k"/>
+                            <constraint firstItem="Tkk-r7-v40" firstAttribute="top" secondItem="vRz-54-k5o" secondAttribute="bottom" constant="50" id="Bbu-Cp-Gai"/>
+                            <constraint firstItem="Tkk-r7-v40" firstAttribute="leading" secondItem="0Ld-9d-4fd" secondAttribute="leading" constant="5" id="cqv-cV-OoF"/>
+                            <constraint firstItem="0Ld-9d-4fd" firstAttribute="bottom" secondItem="Tkk-r7-v40" secondAttribute="bottom" constant="243" id="fOC-8A-Wd7"/>
+                            <constraint firstItem="vRz-54-k5o" firstAttribute="centerX" secondItem="Tkk-r7-v40" secondAttribute="centerX" id="kem-Sj-mXZ"/>
+                            <constraint firstItem="vRz-54-k5o" firstAttribute="top" secondItem="0Ld-9d-4fd" secondAttribute="top" constant="40" id="lxo-h7-ZAg"/>
+                            <constraint firstItem="vRz-54-k5o" firstAttribute="centerX" secondItem="v0j-s5-ikt" secondAttribute="centerX" id="s3i-qu-ymn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My cool backstory" id="rBD-a9-SYk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ms-Ac-gOq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1618.840579710145" y="68.973214285714278"/>
+        </scene>
+        <!--My only weakness-->
+        <scene sceneID="nzC-v8-aC2">
+            <objects>
+                <viewController id="0uo-Ny-USW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="atR-oR-ehY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tony8" translatesAutoresizingMaskIntoConstraints="NO" id="i1a-9w-Dtv">
+                                <rect key="frame" x="5" y="128" width="404" height="338"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Rb-ir-EfU">
+                                <rect key="frame" x="13" y="520" width="388" height="198"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">His dependence on technology is one of his biggest weaknesses. Without all of his high-tech objects, Stark wouldn't even be alive. He has always depended on the arc reactor in his chest, and in Iron Man, audiences saw how unstable he could be when it wasn't working when Pepper had to help change the reactor.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jmf-QM-ArR"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i1a-9w-Dtv" firstAttribute="top" secondItem="jmf-QM-ArR" secondAttribute="top" constant="40" id="C59-nk-OQD"/>
+                            <constraint firstItem="i1a-9w-Dtv" firstAttribute="leading" secondItem="jmf-QM-ArR" secondAttribute="leading" constant="5" id="YbC-yd-rYy"/>
+                            <constraint firstItem="i1a-9w-Dtv" firstAttribute="centerX" secondItem="0Rb-ir-EfU" secondAttribute="centerX" id="Yvl-bC-aFc"/>
+                            <constraint firstItem="0Rb-ir-EfU" firstAttribute="top" secondItem="i1a-9w-Dtv" secondAttribute="bottom" constant="54" id="b8X-1n-YTy"/>
+                            <constraint firstItem="jmf-QM-ArR" firstAttribute="bottom" secondItem="0Rb-ir-EfU" secondAttribute="bottom" constant="144" id="eLz-0b-oRK"/>
+                            <constraint firstItem="0Rb-ir-EfU" firstAttribute="leading" secondItem="jmf-QM-ArR" secondAttribute="leading" constant="13" id="oxU-Dx-9mJ"/>
+                            <constraint firstItem="i1a-9w-Dtv" firstAttribute="centerX" secondItem="atR-oR-ehY" secondAttribute="centerX" id="xgg-qX-NOR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My only weakness" id="n27-yl-UdZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T8o-1O-PHo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2247.826086956522" y="81.696428571428569"/>
+        </scene>
+        <!--How much can I fit-->
+        <scene sceneID="leN-mt-KdL">
+            <objects>
+                <viewController id="byW-fm-kpp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fJV-LN-FGe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tony22" translatesAutoresizingMaskIntoConstraints="NO" id="oRf-Bj-z3b">
+                                <rect key="frame" x="5" y="108" width="404" height="281"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="N3w-gm-EaA">
+                                <rect key="frame" x="20" y="457" width="389" height="146"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" id="zZj-Ng-upa"/>
+                                </constraints>
+                                <string key="text">Without his armor Tony Stark possesses the normal strength of a normal human man his age, height, and build who engages in moderate regular exercise. His armor magnifies Stark strength to superhuman levels, enabling him to lift (press) roughly 85 times.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bnf-iS-feg"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oRf-Bj-z3b" firstAttribute="top" secondItem="Bnf-iS-feg" secondAttribute="top" constant="20" id="HQ3-55-p1p"/>
+                            <constraint firstItem="N3w-gm-EaA" firstAttribute="leading" secondItem="fJV-LN-FGe" secondAttribute="leadingMargin" id="Kue-dX-jhc"/>
+                            <constraint firstItem="N3w-gm-EaA" firstAttribute="top" secondItem="oRf-Bj-z3b" secondAttribute="bottom" constant="68" id="jIP-pj-nhd"/>
+                            <constraint firstItem="oRf-Bj-z3b" firstAttribute="trailing" secondItem="N3w-gm-EaA" secondAttribute="trailing" id="kuF-QG-i8G"/>
+                            <constraint firstItem="Bnf-iS-feg" firstAttribute="bottom" secondItem="N3w-gm-EaA" secondAttribute="bottom" constant="259" id="l8C-JC-NcC"/>
+                            <constraint firstItem="oRf-Bj-z3b" firstAttribute="centerX" secondItem="fJV-LN-FGe" secondAttribute="centerX" id="n5b-MX-da3"/>
+                            <constraint firstItem="oRf-Bj-z3b" firstAttribute="leading" secondItem="Bnf-iS-feg" secondAttribute="leading" constant="5" id="ypv-ea-X8z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="How much can I fit" id="caH-Kp-Wo6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xuz-OD-05a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2902.898550724638" y="81.696428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GgK-Rk-1Zh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lBZ-ia-deW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YoW-oB-Fho">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TfQ-Nm-SzP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jb5-QA-CX4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tony1" width="270" height="516"/>
+        <image name="tony22" width="1920" height="1080"/>
+        <image name="tony4" width="3840" height="2160"/>
+        <image name="tony5" width="3840" height="2160"/>
+        <image name="tony8" width="600" height="338"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
